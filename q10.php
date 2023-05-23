@@ -1,15 +1,12 @@
 <?php
-function calcular_fatorial($n) {
-    $fatorial = 1;
-
+function fatorial_calcu($n) {
+    $fat = 1;
     for ($i = 2; $i <= $n; $i++) {
-        $fatorial *= $i;
+        $fat *= $i;
     }
-
-    return $fatorial;
+    return $fat;
 }
-
 $n = intval($argv[1]);
-$fatorial = calcular_fatorial($n);
+$fat = fatorial_calcu($n);
 
-var_dump($fatorial);
+var_dump($fat);
